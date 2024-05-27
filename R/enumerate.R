@@ -1,16 +1,6 @@
 library(dplyr)
 library(minionator)
 
-discrete_matrix <- function(nrow, ncol, domain, name = "l") {
-  tidyr::expand_grid(row = 0:(nrow - 1), col = 0:(ncol - 1)) |>
-    dplyr::mutate(
-      lower = min(domain),
-      upper = max(domain),
-      name  = name,
-      type  = "DISCRETE"
-    )
-}
-
 l <- discrete_matrix(3, 3, 0:2)
 
 row_latin <- tribble(

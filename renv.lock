@@ -122,9 +122,14 @@
     },
     "minionator": {
       "Package": "minionator",
-      "Version": "0.2.0",
-      "Source": "Repository",
-      "Repository": "https://mhenderson.r-universe.dev",
+      "Version": "0.2.0.9000",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "MHenderson",
+      "RemoteRepo": "minionator",
+      "RemoteRef": "main",
+      "RemoteSha": "f694d5ead1080b3d397e4da6a09b717683748e01",
       "Requirements": [
         "dplyr",
         "glue",
@@ -132,7 +137,7 @@
         "rlang",
         "tidyr"
       ],
-      "Hash": "b1a367c7333265cfc4159502af3a63c9"
+      "Hash": "8c9998f9f4c4c40c9b62582811b9e6f8"
     },
     "pillar": {
       "Package": "pillar",
